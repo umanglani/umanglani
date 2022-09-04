@@ -1,0 +1,31 @@
+@import "./styles/colors.scss";
+
+html {
+  display: flex;
+  justify-content: center;
+
+  display: -ms-flexbox;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', 'Nunito Sans', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: $app-back-color;
+  color: white; // native/default color
+
+  font-size: 14px;
+
+  padding: 30px 0;
+  width: 70%;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

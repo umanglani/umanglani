@@ -1,0 +1,41 @@
+@import "../../../styles/colors.scss";
+
+.tabs-container {
+
+    .tab-item {
+        color: $text-dark-gray;
+        margin: 0 20px;
+
+        &:hover {
+
+            position: relative;
+
+            &:before {
+                border: 1px solid $btn-color-green;
+                content: "";
+                position: absolute;
+                width: 10px;
+                top: -5px;
+                left: calc(50% - 5px);
+            }
+        }
+    }
+
+    .tab-item:first-child {
+        margin-left: 0;
+    }
+
+    .tab-item.active {
+        color: white;
+        position: relative;
+
+        &:before {
+            border: 1px solid $btn-color-green;
+            content: "";
+            position: absolute;
+            width: 10px;
+            top: -5px;
+            left: calc(50% - 5px);
+        }
+    }
+}

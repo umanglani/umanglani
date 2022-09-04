@@ -1,0 +1,135 @@
+@import "../../styles/colors.scss";
+
+.scheduler {
+
+    .scheduler-header {
+
+        padding-left: 20px;
+
+        .icons {
+            width: 50%;
+
+            span {
+                margin-right: 25px;
+                font-size: 20px;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    content: "";
+                    right: -3px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 5px;
+                    top: 2px;
+                    z-index: 3;
+                }
+            }
+
+            .icon-email::before {
+                background-color: $country-card-back-color;
+            }
+
+            .icon-bell::before {
+                background-color: $text-dark-green;
+            }
+
+        }
+
+        .user-info {
+            width: 50%;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .user-icon {
+            font-size: 42px;
+            border: 1px solid rgb(255 255 255 / 50%);
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            overflow: hidden;
+            color: #3e8049;
+        }
+    }
+
+    .today-date {
+
+        font-size: 30px;
+        padding-left: 15px;
+
+        margin: 40px 0 20px 0;
+    }
+
+}
+
+.react-calendar {
+
+    .react-calendar__navigation {
+        display: none !important;
+    }
+
+    .react-calendar__month-view__weekdays__weekday {
+        font-size: 16px;
+
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        abbr {
+            text-decoration: none;
+        }
+    }
+
+    .react-calendar__month-view__days__day {
+
+        background: transparent;
+        color: inherit;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        opacity: 0.3;
+    }
+
+    .highlight-date {
+        
+            position: relative;
+            font-weight: 600;
+            opacity: 1;
+
+            &:before {
+                position: absolute;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                bottom: 0;
+                top: 75%;
+                background-color: $text-dark-green;
+                content: '';
+            }
+    }
+
+    .special-date {
+        opacity: 1;
+        abbr {
+            background: #ffd679;
+            border-radius: 50%;
+            color: black;
+            font-weight: 600;
+
+            width: 30px;
+            height: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

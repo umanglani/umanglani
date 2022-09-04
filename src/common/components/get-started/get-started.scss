@@ -1,0 +1,50 @@
+@import "../../../styles/colors.scss";
+
+.get-started-container {
+
+    margin-top: 50px;
+ 
+    > div {
+        padding: 30px 0;
+    }
+
+    .about-app-text {
+        font-size: 17px;
+        color: $text-dark-gray;
+    }
+
+    .ask-email {
+        border: 2px solid #2c5162;
+        border-radius: 8px;
+        padding: 8px 10px;
+
+        width: 50%;
+
+        input {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: inherit;
+
+            font-size: 18px;
+            font-weight: 200;
+
+            width: 60%;
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+
+        .button-container {
+            text-align: right;
+            width: 40%;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    font-family: inherit;
+    font-size: 16px;
+}

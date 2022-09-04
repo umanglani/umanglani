@@ -1,0 +1,21 @@
+@import "../styles/colors.scss";
+
+.body-container {
+
+    border: 6px solid $body-section-border-color;
+    border-radius: 10px;
+    margin-top: 50px;
+    
+    .overview, .calendar {
+        padding: 15px 30px;
+    }
+
+    .overview {
+        width: 60%;
+        background-color: $overview-widget-back-color;
+    }
+
+    .calendar {
+        width: 40%;
+    }
+}

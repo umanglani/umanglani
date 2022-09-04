@@ -1,0 +1,219 @@
+@import "../../styles/colors.scss";
+
+.overview-container {
+
+    font-size: 16px;
+
+    .tabs-row {
+
+        .search-input {
+            position: relative;
+
+            input {
+                background-color: #07131e;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+    
+                width: 200px;
+                padding: 15px 50px 15px 15px;
+    
+                position: relative;
+                font-size: 15px;
+                color: inherit;
+            }
+
+            span {
+                position: absolute;
+                right: 18px;
+                top: 13px;
+                content: '';
+                font-size: 18px;
+                opacity: 0.8;
+            }
+        }
+
+    }
+
+    .header-row {
+
+        display: grid;
+        grid-template-columns: 75% 25%;
+        margin-top: 40px;
+
+        a {
+            text-align: right;
+        }
+
+    }
+
+    .section-tabs-row {
+
+    }
+
+    .cards {
+        margin-top: 25px;
+
+        display: grid;
+        grid-template-columns: 19.5% 19.5% 34% 23%;
+        grid-column-gap: 2%;
+        grid-row-gap: 10px;
+        width: 100%;
+
+        .country-served {
+            color: black;
+            background-color: $country-card-back-color;
+
+            > span:first-child {
+                font-weight: 600;
+                font-size: 40px;
+            }
+
+            > span:last-child {
+                font-size: 13px;
+            }
+        }
+
+        .earnings {
+            background-color: $earning-card-back-color;
+            grid-row: 1/3;
+            grid-column: 3/3;
+            
+
+            .font-icon {
+                font-size: 55px;
+                color: $text-dark-green;
+            }
+
+            .card-title {
+                font-size: 20px;
+                margin: 0 0 20px 0;
+            }
+
+            .today-date {
+                font-size: 12px;
+                color: $text-dark-green;
+                width: 100%;
+            }
+
+            .amount {
+                font-size: 22px;
+                width: 100%;
+            }
+        }
+
+        .balance {
+            background-color: $earning-card-back-color;
+
+            .font-icon {
+                font-size: 15px;
+                color: $text-dark-green;
+            }
+
+            .card-sub-title {
+                font-size: 14px;
+                // margin: 0 0 20px 0;
+            }
+
+            .available-balance {
+                padding-top: 25px;
+            }
+
+            .bookings {
+                font-size: 22px;
+                color: $text-dark-green;
+            }
+
+            .amount {
+                font-size: 22px;
+            }
+        }
+
+        .credit-card {
+            
+            background-color: $balance-card-back-color;
+            color: black;
+            grid-column: 1 / 3;
+            padding: 10px 30px;
+
+            .font-icon {
+                font-size: 30px;
+            }
+
+            .amount {
+                margin-top: 10px;
+                font-size: 22px;
+                font-weight: 600;
+                width: 100%;
+            }
+
+            .card-number {
+                margin-top: 20px;
+                font-size: 12px;
+
+                .card-d {
+                    padding-right: 15px;
+                }
+            }
+
+        }
+
+        .meetings {
+
+            background-color: $meetings-card-back-color;
+
+            .next-meeting {
+                padding-top: 10px;
+                position: relative;
+                
+                &:after {
+                    content: '';
+                    position: absolute;
+                    border: 1px solid white;
+                    width: 20px;
+                    left: 0;
+                    top: 30px;
+                }
+            }
+
+            .meetings {
+                padding-top: 30px;
+            }
+
+            .meeting-people {
+                position: relative;
+                width: 75%;
+
+                .people {
+                    width: 25px;
+                    height: 25px;
+
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    background-color: $overview-widget-back-color;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                .people:first-child {
+                    margin-left: 0 !important;
+                }
+            }
+
+            .popout-icon {
+                width: 25px;
+                height: 25px;
+
+                border-radius: 50%;
+                overflow: hidden;
+
+                background-color: #3c2979;
+
+                transform: rotate(45deg);
+            }
+        }
+
+    }
+
+}
